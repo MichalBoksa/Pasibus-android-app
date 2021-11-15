@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/openHoursTv2"
+            android:layout_width="168dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="32dp"
+            android:gravity="left"
+            android:text="
+            10:00 - 22:00 \n
+            10:00 - 22:00   \n
+            10:00 - 22:00 \n
+            10:00 - 22:00\n
+            10:00 - 22:00\n
+            10:00 - 22:00\n
+            10:00 - 20:00"
+
+
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/openHoursTv"
+            app:layout_constraintTop_toBottomOf="@+id/localisationEt" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="423dp"
+            android:layout_height="155dp"
+            android:src="@drawable/contact_fot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/openHoursTv"
+            android:layout_width="140dp"
+            android:layout_height="136dp"
+            android:gravity="right"
+            android:text="
+            Poniedziałek\n
+            Wtorek\n
+            Środa \n
+            Czwartek\n
+            Piątek\n
+            Sobota\n
+            Niedziela"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openHoursTitleTv" />
+
+        <EditText
+            android:id="@+id/localisationEt"
+            android:layout_width="311dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:editable="false"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            android:text="Drewnowska 58 tel.: 732194952"
+            android:textStyle="bold"
+            android:inputType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="Deprecated" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/googleMap"
+            android:layout_width="407dp"
+            android:layout_height="337dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openHoursTv"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/openHoursTitleTv"
+            android:layout_width="135dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Godziny otwarcia:"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/localisationEt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

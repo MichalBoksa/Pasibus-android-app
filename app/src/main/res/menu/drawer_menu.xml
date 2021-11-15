@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id = "@+id/home"
+        android:icon ="@drawable/home_icon"
+        android:title="Strona główna"
+        />
+
+    <item
+        android:id = "@+id/food"
+        android:icon="@drawable/food_icon"
+        android:title="Menu"/>
+
+    <item
+        android:id = "@+id/gallery"
+        android:icon="@drawable/gallery_icon"
+        android:title="Galeria"/>
+
+    <item
+        android:id = "@+id/contact"
+        android:icon="@drawable/contact_icon"
+        android:title="Lokalizacja"
+        />
+
+</menu>
